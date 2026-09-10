@@ -1,0 +1,71 @@
+
+@font-face {
+    font-family: MonoFont;
+    src: url("./assets/fonts/SourceCodePro-Regular.ttf");
+}
+
+@font-face {
+    font-family: Monsterrat;
+    src: url("./assets/fonts/Montserrat-VariableFont.ttf")
+}
+
+.name-header, .name-subheader {
+    position: relative;
+    width: 100%;
+    font-family: Monsterrat;
+    font-weight: bold;
+    margin: 0;
+}
+
+.name-header { 
+    color: white;
+    font-size: 72px;
+}
+.name-subheader { 
+    color: #7c7c7c;
+    font-size: 48px;
+}
+
+.hero-flex-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background-position-x: center;
+    background-position-y: center;
+    background-image: url("./assets/imgs/portfolioherobg.png");
+    background-color: black;
+    background-repeat: no-repeat;
+    image-rendering: crisp-edges;
+}
+
+.name-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-col {
+    flex: 1;
+}
+
+.spacecraft-stats-container {
+    display: flex;
+}
+
+.spacecraft-stats {
+    font-family: MonoFont;
+    color: #7c7c7c;
+}
+
+#v1 {
+    text-align: left;
+    padding-inline: 10%;
+    padding-block: 20%;
+}
+
+#p11 {
+    align-self: flex-end;
+    text-align: left;
+    padding-inline: 15%;
+    padding-block: 15%;
+}
