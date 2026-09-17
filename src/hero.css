@@ -30,12 +30,22 @@
     width: 100vw;
     height: 100vh;
     display: flex;
+    background-image: url("./assets/imgs/portfolioherobg.png");
     background-position-x: center;
     background-position-y: center;
-    background-image: url("./assets/imgs/portfolioherobg.png");
     background-color: black;
     background-repeat: no-repeat;
     image-rendering: crisp-edges;
+}
+ 
+/* portrait */
+@media (orientation: portrait)
+{
+    .hero-flex-container {
+        background-image: url("./assets/imgs/portfolioherobgmobile.png");
+        flex-direction: column;
+        background-position-y: top;
+    }
 }
 
 .name-container {
