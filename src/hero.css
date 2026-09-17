@@ -20,10 +20,13 @@
 .name-header { 
     color: white;
     font-size: 72px;
+    animation: fadeInUp 1s ease 0s 1 normal forwards;
 }
 .name-subheader { 
     color: #7c7c7c;
     font-size: 48px;
+    opacity: 0;
+    animation: fadeInUp 1s ease 0.25s 1 normal forwards;
 }
 
 .hero-flex-container {
@@ -31,6 +34,7 @@
     height: 100vh;
     display: flex;
     background-image: url("./assets/imgs/portfolioherobg.png");
+    background-size: cover;
     background-position-x: center;
     background-position-y: center;
     background-color: black;
@@ -62,6 +66,7 @@
     text-align: left;
     padding-inline: 10%;
     padding-block: 20%;
+    animation: fadeIn 1s ease 0s 1 normal forwards;
 }
 
 #p11 {
@@ -69,6 +74,7 @@
     text-align: left;
     padding-inline: 15%;
     padding-block: 15%;
+    animation: fadeIn 1s ease 0s 1 normal forwards;
 }
 
 /* portrait */
@@ -78,7 +84,7 @@
         background-image: url("./assets/imgs/portfolioherobgmobile.png");
         flex-direction: column;
         background-position-y: top;
-        background-size: cover;
+        background-size: contain;
     }
 
     #v1 {
@@ -90,4 +96,28 @@
         align-self: flex-start;
         padding-top: 5%;
     }
+}
+
+/* Generated this with the following tool:
+https://webcode.tools/css-generator/keyframe-animation */
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes fadeInUp {
+	0% {
+		opacity: 0;
+		transform: translateY(25px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
 }
